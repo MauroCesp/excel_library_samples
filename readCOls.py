@@ -10,5 +10,5 @@ def iterating_column(path, sheet_name, col):
     for cell in sheet[col]:
         print(f"{cell.column_letter}{cell.row} = {cell.value}")
 if __name__ == "__main__":
-    iterating_column("test.xlsx", sheet_name="Journals",
+    iterating_column("docs/test.xlsx", sheet_name="Journals",
                     col="A")

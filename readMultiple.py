@@ -21,4 +21,4 @@ def iterating_over_values(path, sheet_name):
         print(value)
 
 if __name__ == "__main__":
-    iterating_over_values("test.xlsx", sheet_name="Journals")
+    iterating_over_values("docs/test.xlsx", sheet_name="Journals")

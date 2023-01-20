@@ -34,4 +34,4 @@ ws.add_chart(chart,'C1')
 
 # Cunado tenemos todo lo que queremos guardamos el archivo
 
-wb.save('graphs.xlsx')
+wb.save('docs/graphs.xlsx')

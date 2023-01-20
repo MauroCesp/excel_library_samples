@@ -34,4 +34,4 @@ ws.append([1, 2, 3])
 ws['A2'] = datetime.datetime.now()
 
 # Save the file
-wb.save("sample.xlsx")
+wb.save("docs/sample.xlsx")

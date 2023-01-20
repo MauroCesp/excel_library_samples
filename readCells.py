@@ -13,5 +13,5 @@ def iterating_row(path, sheet_name, row):
         print(f"{cell.column_letter}{cell.row} = {cell.value}")
 
 if __name__ == "__main__":
-    iterating_row("test.xlsx", sheet_name="Journals",
+    iterating_row("docs/test.xlsx", sheet_name="Journals",
                   row=2)

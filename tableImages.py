@@ -9,7 +9,7 @@ from openpyxl import load_workbook
 #---------------------#
 #       WORK BOOK     #
 #---------------------#
-wb = load_workbook('graphs.xlsx')
+wb = load_workbook('docs/graphs.xlsx')
 
 #----------------------#
 #       WORK SHEET     #
@@ -38,10 +38,15 @@ tab.tableStyleInfo = style
 
 # Por ultimo agregamo la tabla al worksheet
 ws.add_table(tab)
-wb.save('table.xlsx')
+wb.save('docs/table.xlsx')
 
 # imagenes
 img = Image('img/excel.jpg')
+
+# El objeto de Image tiene propiedad de height and width
+# pero no logré verlo
+# Buscar en internet
+
 
 # Cunado tenemos la imagen la agregamos al worksheet
 ######################
@@ -52,4 +57,4 @@ img = Image('img/excel.jpg')
 # ser siempre el TOP-LEFT_CORNER
 ws.add_image(img,'C1')
 
-wb.save('image.xlsx')
+wb.save('docs/image.xlsx')

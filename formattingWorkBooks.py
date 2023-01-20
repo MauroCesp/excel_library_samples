@@ -48,7 +48,7 @@ cell.alignment = Alignment(horizontal= 'right', vertical='bottom')
 # Esto significa que los primero 2 valores= RED, segundos 2 = Green, terceros 2= BLUE
 cell.fill = GradientFill(stop=("000000","FFFFFF"))
 
-wb.save('formatting.xlsx')
+wb.save('docs/formatting.xlsx')
 
 
 ##############################
@@ -74,11 +74,11 @@ count = 0
 
 # Para recorrer las celdas existe una funcion de FOR Do que viene con la libreria
 # Primero seleccionamos los minimos y despues los maximos para que no se salga de control
-# Esto nos pinta un tipo de escalera 
+# Esto nos pinta un tipo de escalera
 for col in ws.iter_cols(min_col=8, min_row=1, max_col=30, max_row=30):
     #Remeber that en la funcion ITER_COLS, columns store a list
     # Por eso podemos utilizar el couter para indexar la lista paralos rows we want
     # Cada vuelta del cauter nos movemos un row para abajo
     col[count].style = hightlight
     count = count + 1
-wb.save('formatting.xlsx')
+wb.save('docs/formatting.xlsx')

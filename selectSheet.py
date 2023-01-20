@@ -7,4 +7,4 @@ def open_workbook(path, sheet_name):
         print(f"The title of the Worksheet is: {sheet.title}")
         print(f"Cells that contain data: {sheet.calculate_dimension()}")
 if __name__ == "__main__":
-    open_workbook("test.xlsx", sheet_name="Journals")
+    open_workbook("docs/test.xlsx", sheet_name="Journals")

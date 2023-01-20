@@ -10,7 +10,7 @@ import datetime
 #   LOAD WORK BOOK    #
 #---------------------#
 
-wb = load_workbook("test.xlsx")
+wb = load_workbook("docs/test.xlsx")
 
 sheet = wb.active
 
@@ -39,4 +39,4 @@ values = Reference(worksheet=sheet,
 chart.add_data(values, titles_from_data=True)
 sheet.add_chart(chart, "T2")
 
-wb.save("student_chart.xlsx")
+wb.save("docs/student_chart.xlsx")

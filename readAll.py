@@ -10,6 +10,6 @@ def read_all_data(path):
 
         for value in sheet.iter_rows(values_only=True):
             print(value)
-            
+
 if __name__ == "__main__":
-    read_all_data("test.xlsx")
+    read_all_data("docs/test.xlsx")
